@@ -8,7 +8,7 @@ tokenizer = AutoTokenizer.from_pretrained("tinyllama-merged")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = model.to(device)
 
-prompt = "### Instruction:\nWho is Hassan Habib?\n\n### Input:\n\n### Response:\n"
+prompt = "### Instruction:\nSecureTech secure email practices.?\n\n### Input:\n\n### Response:\n"
 inputs = tokenizer(prompt, return_tensors="pt").to(device)
 
 model.eval()
